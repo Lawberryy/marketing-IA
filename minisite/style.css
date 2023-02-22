@@ -95,8 +95,10 @@ body #formContainer h1 {
 }
 .contactez-nous h1 {
   font-weight: 500;
+  text-align: center;
 }
 .contactez-nous p {
+  text-align: center;
   font-weight: 300;
 }
 .contactez-nous form div {
@@ -120,7 +122,7 @@ body #formContainer h1 {
   background-repeat: no-repeat;
   height: 50px;
   padding-left: 10px;
-  background: #e4e2e2;
+  background: rgba(228, 226, 226, 0.3019607843);
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -138,7 +140,7 @@ body #formContainer h1 {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 .contactez-nous form div textarea {
-  background: #c7c5c5;
+  background: rgba(228, 226, 226, 0.3019607843);
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -146,7 +148,7 @@ body #formContainer h1 {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 .contactez-nous form div select:invalid {
-  color: white;
+  color: black;
 }
 .contactez-nous form div select option {
   background: white;
@@ -163,19 +165,7 @@ body #formContainer h1 {
   font-weight: 700;
   font-size: 28px;
   background: #EE7F01;
-  border: rgba(48, 48, 48, 0.5) solid 1px;
+  border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  color: #303030;
-}
-
-form button {
-  width: 450px;
-  max-width: 500px;
-  height: 60px;
-  font-weight: 700;
-  font-size: 28px;
-  background: white;
-  border: rgba(48, 48, 48, 0.5) solid 1px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  color: #303030;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
