@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini site</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <nav>
@@ -17,6 +17,122 @@
 			<a href="#">Formulaire</a>
 		</div>
     </nav>
-    
-</body>
-</html>
+    <main>
+        <div class="social-box">
+            <div class="header">Prérequis</div>
+            <div class="body well">
+            1/ Avoir les commandes git fonctionnelle
+            <br> <br>Vous devrez vérifier que les commandes git sont installé dans votre terminal.
+            <br>Pour vérifier il vous suffit d'ouvrir votre terminal ou votre invite de commande et de taper git --version
+            <br> <br>Si la version apparait tout est bon. Si la commande n'est pas reconnue il faudra l'installer.
+            <br> <br>Installation sur mac :
+            <br> <br>Faire brew install git
+            <br> <br>Installation sur Windows :
+            <br> <br>Faire choco install git
+            <br> <br> <br>2/ Avoir un compte github
+            <br> <br>Du côté de github, si vous n'avez pas encore créé votre profil sur le site, je vous laisse consulter le site éducation pour vous inscrire : https://education.github.com/pack
+            <br> <br> <br>3/ Générer et lier github à une clé ssh
+            <br> <br>(Les étudiants qui ont fait le setup windows à la rentrée ont déjà réalisé cette étape je crois).
+            <br> <br>Que ce soit sur windows ou sur mac, il faudra entrer dans un terminal la commande ssh-keygen. Au niveau des questions, vous pouvez laisser les réponses vide en appuyant sur entrer. Cette génération de clé est à faire avec l'ordi avec lequel vous allez travailler le cours de git. <br> <br>Il faudra récupérer la clé générée en ouvrant le fichier id_rsa.pub dans un éditeur de code ou bloc-notes.
+            <br>Sur mac le chemin de la clé est : /Users/votre_nom_d_utilisateur/.ssh/id_rsa.pub
+            <br>Sur windows : C:Usersvotre_nom_d_utilisateur/.ssh/id_rsa.pub
+            <br> <br>Si vous ne trouvez pas le dossier .ssh sur mac, faire les commandes suivantes :
+            <br>defaults write com.apple.finder AppleShowAllFiles -bool true
+            <br>killall Finder
+            <br> <br>Si vous ne trouvez pas le dossier .ssh sur wondows : https://support.microsoft.com/fr-fr/help/4028316/windows-view-hidden-files-and-folders-in-windows-10
+            <br> <br> <br>Ouvrez le fichier et copier la clé.
+            <br>Sur github dans les settings ssh (https://github.com/settings/keys), faire new ssh key, coller la clé et donner lui un titre.
+            </div>
+            </div>
+        <div class="social-box">
+            <div class="header">Contenu du cours</div>
+                <div class="body well">
+                Comprendre d'où vient git
+                <br>Premiers pas sur git : Les commandes de bases
+                <br>Travailler avec github en équipe
+                <br>Les branches
+                <br>Les merges et conflits
+                <br>Créer des versions de son projet
+                <br>readme : Savoir documenter son projet au travers du markdown
+                <br>.gitignore
+            </div>
+        </div>
+        <div class="social-box">
+            <div class="header">Compétences développées</div>
+            <div class="textarea well">
+            <ul>
+            <li>Maitrise des commandes git</li>
+            <li>Mise en place d'un projet sur github</li>
+            <li>Savoir documenter un projet</li>
+            <li>Savoir versionner un projet</li>
+            </ul>
+            </div>
+            </div>
+        <div class="social-box">
+            <div class="header">Objectifs</div>
+            <div class="body well">L'objectif est de comprendre et maitriser git, outil qui permet de versionner et faire des snapshots de ses projets tech. On le mettra en synergie avec github, plateforme web qui permet de stocker ces différentes versions dans le cloud.</div>
+        </div>
+        <div class="contactez-nous">
+            <h1>Progression du questionnaire</h1>
+            <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+            <form action="/page-traitement-donnees" method="post">
+            <div>
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Martin" required>
+            </div>
+            <div>
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <h4>Evaluation du cours précédent</h4>
+            <div>
+            <label for="sujet">le contenu du module est satisfaisant</label>
+            <select name="sujet" id="sujet" required>
+            <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+            <option value="probleme-compte">Problème avec mon compte</option>
+            <option value="question-produit">Question à propos d’un produit</option>
+            <option value="suivi-commande">Suivi de ma commande</option>
+            <option value="autre">Autre...</option>
+            </select>
+            </div>
+            <div>
+                <label for="sujet">L'animation du module est satisfaisante</label>
+                <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                <option value="probleme-compte">Problème avec mon compte</option>
+                <option value="question-produit">Question à propos d’un produit</option>
+                <option value="suivi-commande">Suivi de ma commande</option>
+                <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="sujet">l'évaluation du module est satisfaisante</label>
+                <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                <option value="probleme-compte">Problème avec mon compte</option>
+                <option value="question-produit">Question à propos d’un produit</option>
+                <option value="suivi-commande">Suivi de ma commande</option>
+                <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="sujet">vous etes globalement satisfait ?</label>
+                <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                <option value="probleme-compte">Problème avec mon compte</option>
+                <option value="question-produit">Question à propos d’un produit</option>
+                <option value="suivi-commande">Suivi de ma commande</option>
+                <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+            <label for="message">Votre message: points positifs et points à améliorer</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+            </div>
+            <div>
+            <button type="submit">Envoyer mon message</button>
+            </div>
+            </form>
+            </div>
+    </main>
+    <div class="body">
