@@ -1,32 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: #fff;
+  background-color: #ffffff;
   padding: 10px;
 }
 body nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px;
+  transition: transform 0.3s ease-in-out;
 }
-body nav a:hover {
-  background-color: #fff;
-  color: #333;
+body nav .orange-cta {
+  padding: 10px 36px 11px;
+  background: linear-gradient(40deg, #000000, #003d66, #945fa4) !important;
 }
-body nav img {
-  height: 50px;
-  margin-left: 10px;
+body nav .btn-candidature {
+  padding: 10px 36px 11px;
+  background-color: #EE7F01;
 }
-body .social-box {
+body nav .logo_container {
+  height: 5rem;
+}
+body nav .logo_container #logo {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .enteteContainer .enteteImg {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(40deg, rgba(148, 95, 164, 0.75), rgba(0, 61, 102, 0.75), rgba(0, 0, 0, 0.75)), url("https://www.iim.fr/ecole-web/wp-content/uploads/2022/12/Sans-titre908.jpg");
+}
+body #formContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+body #formContainer h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.social-box {
   margin-top: 0px;
   margin-bottom: 25px;
   background-color: #ffffff;
@@ -36,12 +62,13 @@ body .social-box {
   width: 80%;
   margin: auto;
 }
-body .social-box .body {
+.social-box .body {
   clear: both;
   padding: 0;
   padding: 12px;
 }
-body .well {
+
+.well {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -50,38 +77,40 @@ body .well {
   border-radius: 1px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-body .social-box .header, body .social-box header {
+
+.social-box .header, .social-box header {
   background: #ffffff;
   border-bottom: 1px solid #e4eaec;
   background-color: #ee7F01;
   border-color: #87ccd3;
   color: #ffffff !important;
 }
-body .contactez-nous {
+
+.contactez-nous {
   margin: auto;
   width: 80%;
   border: 1px solid;
   padding: 0 50px 0 50px;
   background: white;
 }
-body .contactez-nous h1 {
+.contactez-nous h1 {
   font-weight: 500;
 }
-body .contactez-nous p {
+.contactez-nous p {
   font-weight: 300;
 }
-body .contactez-nous form div {
+.contactez-nous form div {
   width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 83px;
   margin-top: 25px;
 }
-body .contactez-nous form div label {
+.contactez-nous form div label {
   margin-bottom: 7px;
   font-weight: 600;
 }
-body .contactez-nous form div select {
+.contactez-nous form div select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -99,7 +128,7 @@ body .contactez-nous form div select {
   font-family: Montserrat, "sans-serif";
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
-body .contactez-nous form div input {
+.contactez-nous form div input {
   height: 50px;
   padding-left: 10px;
   background: #FFD9D9;
@@ -110,7 +139,7 @@ body .contactez-nous form div input {
   font-family: Montserrat, "sans-serif";
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
-body .contactez-nous form div textarea {
+.contactez-nous form div textarea {
   background: #FFD9D9;
   border: none;
   border-radius: 5px;
@@ -119,18 +148,18 @@ body .contactez-nous form div textarea {
   font-family: Montserrat, "sans-serif";
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
-body .contactez-nous form div select:invalid {
+.contactez-nous form div select:invalid {
   color: white;
 }
-body .contactez-nous form div select option {
+.contactez-nous form div select option {
   background: white;
   color: #303030;
 }
-body .contactez-nous form div:last-child {
+.contactez-nous form div:last-child {
   align-items: center;
   margin-top: 20px;
 }
-body .contactez-nous form button {
+.contactez-nous form button {
   width: 450px;
   max-width: 500px;
   height: 60px;

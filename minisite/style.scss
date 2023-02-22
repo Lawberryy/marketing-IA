@@ -1,31 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body {
-   
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #333;
-        color: #fff;
+        background-color: #ffffff;
+        // color: #fff;
         padding: 10px;
         a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             padding: 10px;
+            transition: transform 0.3s ease-in-out;
         }
-        a:hover {
-            background-color: #fff;
-            color: #333;
+    
+    
+        .orange-cta{
+            padding: 10px 36px 11px;
+            background: linear-gradient(40deg, #000000,#003d66,#945fa4)!important;
         }
-        img {
-            height: 50px;
-            margin-left: 10px;
+        .btn-candidature{
+            padding: 10px 36px 11px;
+            background-color: #EE7F01;
         }
+        .logo_container{
+            height: 5rem;
+            #logo{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        
+    }
+    
+    .enteteContainer{
+    
+        .enteteImg{
+            height: 50vh;
+            // opacity:0.75;
+            // background: linear-gradient(40deg, #945fa4,#003d66,#000000 60%);
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(40deg, rgba(148, 95, 164, 0.75), rgba(0, 61, 102, 0.75), rgba(0, 0, 0, 0.75)), url('https://www.iim.fr/ecole-web/wp-content/uploads/2022/12/Sans-titre908.jpg');
+        }
+    }
+    
+    #formContainer{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        h1{
+            font-size: 2rem;
+            font-weight:bold;
+        }
+    }
     }
     .social-box {
         margin-top: 0px;
@@ -147,7 +185,7 @@ body {
             }
 
     }
-}  
+      
     form button {
     width: 450px;
     max-width: 500px;
