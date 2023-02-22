@@ -42,7 +42,7 @@
             1/ Avoir les commandes git fonctionnelles
             <br> <br>Vous devrez vérifier que les commandes git sont installées dans votre terminal.
             <br>Pour vérifier il vous suffit d'ouvrir votre terminal ou votre invite de commande et de taper git --version
-            <br> <br>Si la version apparait tout est bon. Si la commande n'est pas reconnue il faudra l'installer.
+            <br> <br>Si la version apparait, tout est bon. Si la commande n'est pas reconnue, il faudra l'installer.
             <br> <br>Installation sur mac :
             <br> <br>Faire brew install git
             <br> <br>Installation sur Windows :
@@ -51,14 +51,14 @@
             <br> <br>Du côté de github, si vous n'avez pas encore créé votre profil sur le site, je vous laisse consulter le site éducation pour vous inscrire : https://education.github.com/pack
             <br> <br> <br>3/ Générer et lier github à une clé ssh
             <br> <br>(Les étudiants qui ont fait le setup windows à la rentrée ont déjà réalisé cette étape je crois).
-            <br> <br>Que ce soit sur windows ou sur mac, il faudra entrer dans un terminal la commande ssh-keygen. Au niveau des questions, vous pouvez laisser les réponses vide en appuyant sur entrer. Cette génération de clé est à faire avec l'ordi avec lequel vous allez travailler le cours de git. <br> <br>Il faudra récupérer la clé générée en ouvrant le fichier id_rsa.pub dans un éditeur de code ou bloc-notes.
+            <br> <br>Que ce soit sur windows ou sur mac, il faudra entrer dans un terminal la commande ssh-keygen. Au niveau des questions, vous pouvez laisser les réponses vides en appuyant sur entrer. Cette génération de clé est à faire avec l'ordi avec lequel vous allez travailler le cours de git. <br> <br>Il faudra récupérer la clé générée en ouvrant le fichier id_rsa.pub dans un éditeur de code ou bloc-notes.
             <br>Sur mac le chemin de la clé est : /Users/votre_nom_d_utilisateur/.ssh/id_rsa.pub
             <br>Sur windows : C:Usersvotre_nom_d_utilisateur/.ssh/id_rsa.pub
             <br> <br>Si vous ne trouvez pas le dossier .ssh sur mac, faire les commandes suivantes :
             <br>defaults write com.apple.finder AppleShowAllFiles -bool true
             <br>killall Finder
             <br> <br>Si vous ne trouvez pas le dossier .ssh sur wondows : https://support.microsoft.com/fr-fr/help/4028316/windows-view-hidden-files-and-folders-in-windows-10
-            <br> <br> <br>Ouvrez le fichier et copier la clé.
+            <br> <br> <br>Ouvrez le fichier et copiez la clé.
             <br>Sur github dans les settings ssh (https://github.com/settings/keys), faire new ssh key, coller la clé et donner lui un titre.
             </div>
             </div>
@@ -92,13 +92,13 @@
         </div>
         <div class="contactez-nous">
             <h1 >Evaluation du cours précédent</h1>
-            <p>Un problème, une question, N’hésitez pas à utiliser ce formulaire pour nous faire part de votre ressenti!</p>
+            <p>Un problème, une question, n’hésitez pas à utiliser ce formulaire pour nous faire part de votre ressenti !</p>
             <form action="/page-traitement-donnees" method="post">
             <h4></h4>
             <div>
-            <label for="sujet">le contenu du module est satisfaisant</label>
+            <label for="sujet">Le contenu du module est satisfaisant :</label>
             <select name="sujet" id="sujet" required>
-            <option value="" disabled selected hidden> Est il à la hauteur ?</option>
+            <option value="" disabled selected hidden> Est-il à la hauteur ?</option>
             <option value="probleme-compte">Totalement Satisfait</option>
             <option value="question-produit">satisfait</option>
             <option value="suivi-commande">Plutot satisfait</option>
@@ -106,9 +106,9 @@
             </select>
             </div>
             <div>
-                <label for="sujet">L'animation du module est satisfaisante</label>
+                <label for="sujet">L'animation du module est satisfaisante :</label>
                 <select name="sujet" id="sujet" required>
-                    <option value="" disabled selected hidden> Est elle à la hauteur ?</option>
+                    <option value="" disabled selected hidden> Est-elle à la hauteur ?</option>
                     <option value="probleme-compte">Totalement Satisfait</option>
                     <option value="question-produit">satisfait</option>
                     <option value="suivi-commande">Plutot satisfait</option>
@@ -116,9 +116,9 @@
                 </select>
             </div>
             <div>
-                <label for="sujet">l'évaluation du module est satisfaisante</label>
+                <label for="sujet">L'évaluation du module est satisfaisante :</label>
                 <select name="sujet" id="sujet" required>
-                    <option value="" disabled selected hidden> Est elle à la hauteur ?</option>
+                    <option value="" disabled selected hidden> Est-elle à la hauteur ?</option>
                     <option value="probleme-compte">Totalement Satisfait</option>
                     <option value="question-produit">satisfait</option>
                     <option value="suivi-commande">Plutot satisfait</option>
@@ -126,7 +126,7 @@
                 </select>
             </div>
             <div>
-                <label for="sujet">vous etes globalement satisfait ?</label>
+                <label for="sujet">Etes-vous globalement satisfait ?</label>
                 <select name="sujet" id="sujet" required>
                     <option value="" disabled selected hidden> oui</option>
                     <option value="probleme-compte">Totalement Satisfait</option>
@@ -136,7 +136,7 @@
                 </select>
             </div>
             <div>
-            <label for="message">Votre message: points positifs et points à améliorer</label>
+            <label for="message">Votre message : points positifs et points à améliorer</label>
             <textarea id="message" name="message" placeholder="Bonjour, je pense que...." required></textarea>
             </div>
             <div>
